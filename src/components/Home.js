@@ -77,7 +77,7 @@ const Home = ({ correoUsuario }) => {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="./App.js">
+              <a class="nav-link active" aria-current="page" href="#">
                 Home
               </a>
               <a class="nav-link" href="#">
@@ -87,11 +87,11 @@ const Home = ({ correoUsuario }) => {
                 Pricing
               </a>
             </div>
-            <div class="d-flex justify-content-end">
-              <h4>hola, sesión iniciada</h4>
-              <Button onClick={() => signOut(auth)}>Cerrar sesión</Button>
-            </div>
           </div>
+        </div>
+        <h4>sesión iniciada</h4>
+        <div className="">
+          <Button onClick={() => signOut(auth)}>Cerrar sesión</Button>
         </div>
       </nav>
       <br />

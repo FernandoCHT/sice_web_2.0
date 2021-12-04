@@ -36,11 +36,18 @@ const Logueo = () => {
   return (
     <Container>
       <Stack gap={3}>
-        <h1>{estaRegistrandose ? "Regístrate" : "inicia sesión"}</h1>
-        <Form onSubmit={submitHandler}>
+        <h1 className="text-center ">
+          {estaRegistrandose ? "Regístrate" : "inicia sesión"}
+        </h1>
+        <Form className="text-center border p-3 " onSubmit={submitHandler}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" required />
+            <Form.Control
+              className="center"
+              type="email"
+              placeholder="Enter email"
+              required
+            />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
